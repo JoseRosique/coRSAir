@@ -59,7 +59,7 @@ RSA	*get_rsa(char *file)
 	}
 	fclose(fd);					// Close the file and free memory.
 	X509_free(cert);			// Free the memory allocated for an X.509 certificate object.
-	EVP_PKEY_free(pkey);		// Freee the memory allocated for an EVP_PKEY.
+	EVP_PKEY_free(pkey);		// Free the memory allocated for an EVP_PKEY.
 	return (rsa);
 }
 
